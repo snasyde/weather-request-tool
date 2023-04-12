@@ -33,14 +33,20 @@ def get_weather_data(lat, lon, api_key):
         # If there's an unknown error, raise the original exception
         raise e
 
-
+def get_lat_lon():
+    # Asks the user what latitude / longitude he has
+    lat = float(input('Your latitude: '))
+    lon = float(input('Your longitude: '))
+    
+    # Return the latitude / longitude
+    return lat, lon
+        
 try:
-    # Try to read the 'lat' and 'lon' environment variables from the .env file as float values
-    lat = float(os.getenv('lat'))
-    lon = float(os.getenv('lon'))
-
     # Try to read the 'API_KEY' environment variable from the .env file
     api_key = os.getenv('API_KEY')
+    
+    # Get the latitude / longitude
+    lat, lon = get_lat_lon()
 
     # Get the weather data
     location, temperature, weather_description = get_weather_data(lat, lon, api_key)
