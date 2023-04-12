@@ -58,4 +58,3 @@ except Exception as e:
     # If another unexpected error occurs, catch the general Exception exception and print an error message
     print('An unknown error occurred.')
     print(e)
-    print(e)
