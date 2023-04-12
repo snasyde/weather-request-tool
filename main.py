@@ -6,7 +6,6 @@ import requests
 # Load environment variables from the .env file
 load_dotenv()
 
-
 def get_weather_data(lat, lon, api_key):
     try:
         # Try to make the OpenWeatherMap API request
@@ -51,10 +50,12 @@ try:
     print(f'Description: {weather_description}')
 
 except ValueError as e:
-    # If there's a custom exception, print the error message
+    # If either value couldn't be read, catch the ValueError exception and print an error message
+    print('There was an error while reading the environment variables.')
     print(e)
 
 except Exception as e:
-    # If there's an unknown error, print a general error message
+    # If another unexpected error occurs, catch the general Exception exception and print an error message
     print('An unknown error occurred.')
+    print(e)
     print(e)
