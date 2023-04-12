@@ -1,28 +1,28 @@
-# Wettervorhersage mit OpenWeatherMap API
+# Weather Forecast with OpenWeatherMap API
 
-Dieses Python-Skript stellt eine Anfrage an die OpenWeatherMap-API und gibt die aktuelle Temperatur und Wetterbedingungen für einen bestimmten Breiten- und Längengrad aus.
+This Python script makes a request to the OpenWeatherMap API and outputs the current temperature and weather conditions for a specified latitude and longitude.
 
 ## Installation
 
-1. Laden Sie das Repository herunter oder klonen Sie es mit `git clone`.
-2. Stellen Sie sicher, dass Sie Python 3.x installiert haben.
-3. Installieren Sie die benötigten Python-Module mit dem Befehl `pip install -r requirements.txt`.
-4. Geben Sie die gewünschte Breite und Länge in der `.env`-Datei an.
-5. Fügen Sie Ihre OpenWeatherMap-API-Schlüssel in der `.env`-Datei hinzu.
-6. Führen Sie das Skript mit dem Befehl `python main.py` aus.
+1. Download or clone the repository using `git clone`.
+2. Ensure that you have Python 3.x installed.
+3. Install the required Python modules using the command `pip install -r requirements.txt`.
+4. Specify the desired latitude and longitude in the `.env` file.
+5. Add your OpenWeatherMap API keys to the `.env` file.
+6. Run the script using the command `python main.py`.
 
-## Konfiguration
+## Configuration
 
-- Die Breite und Länge müssen als Dezimalzahlen in der `.env`-Datei angegeben werden.
-- Sie können einen API-Schlüssel von OpenWeatherMap erhalten, indem Sie sich auf der [OpenWeatherMap-Website](https://openweathermap.org/) registrieren und ein Konto erstellen.
-- Speichern Sie Ihren API-Schlüssel in der `.env`-Datei als `API_KEY`-Variable.
+- The latitude and longitude must be specified as decimal numbers in the `.env` file.
+- You can obtain an API key from OpenWeatherMap by registering on the [OpenWeatherMap website](https://openweathermap.org/) and creating an account.
+- Save your API key in the `.env` file as the `API_KEY` variable.
 
-## Verwendung
+## Usage
 
-- Führen Sie das Skript mit dem Befehl `python main.py` aus.
-- Das Skript gibt die aktuelle Temperatur und Wetterbedingungen für die angegebenen Breiten- und Längengrade aus.
-- Wenn die Abfrage erfolgreich ist, gibt das Skript die Daten aus. Andernfalls wird eine Fehlermeldung angezeigt.
+- Run the script using the command `python main.py`.
+- The script will output the current temperature and weather conditions for the specified latitude and longitude.
+- If the request is successful, the script will output the data. Otherwise, an error message will be displayed.
 
 ## Credits
 
-Dieses Skript wurde von Snasy erstellt und ist unter der MIT-Lizenz lizenziert.
+This script was created by Snasy and is licensed under the MIT License.
