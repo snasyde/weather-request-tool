@@ -13,7 +13,6 @@ This Python script makes a request to the OpenWeatherMap API and outputs the cur
 
 ## Configuration
 
-- The latitude and longitude must be specified as decimal numbers in the `.env` file.
 - You can obtain an API key from OpenWeatherMap by registering on the [OpenWeatherMap website](https://openweathermap.org/) and creating an account.
 - Save your API key in the `.env` file as the `API_KEY` variable.
 
