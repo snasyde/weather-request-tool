@@ -52,8 +52,7 @@ try:
     location, temperature, weather_description = get_weather_data(lat, lon, api_key)
 
     # Print the weather information
-    print(f'In {location}, it is {temperature} ℃')
-    print(f'Description: {weather_description}')
+    print(f'In {location}, it is {temperature} ℃\nDescription: {weather_description}')
 
 except ValueError as e:
     # If either value couldn't be read, catch the ValueError exception and print an error message
