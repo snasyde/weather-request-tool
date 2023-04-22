@@ -56,10 +56,8 @@ try:
 
 except ValueError as e:
     # If either value couldn't be read, catch the ValueError exception and print an error message
-    print('There was an error while reading the environment variables.')
-    print(e)
+    print(f'There was an error while reading the environment variables.\n{e}')
 
 except Exception as e:
     # If another unexpected error occurs, catch the general Exception exception and print an error message
-    print('An unknown error occurred.')
-    print(e)
+    print(f'An unknown error occurred.\n{e}')
