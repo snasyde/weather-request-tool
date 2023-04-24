@@ -3,7 +3,7 @@ from typing import Dict
 from dotenv import load_dotenv
 
 from extensions.weather_request import get_weather_data
-from extensions.user_input import get_user_location
+from extensions.user_location import get_user_location
 
 def get_api_key() -> str:
     # Load environment variables from the .env file

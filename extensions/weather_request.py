@@ -1,5 +1,5 @@
 import requests
-from user_input import get_user_location
+from user_location import get_user_location
 
 def get_weather_data(api_key: str) -> dict:
     # Get the user's location information
