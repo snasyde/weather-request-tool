@@ -34,13 +34,20 @@ def get_weather_data(lat, lon, api_key):
         raise e
 
 def get_lat_lon():
-    # Asks the user what latitude / longitude he has
-    lat = float(input('Your latitude: '))
-    lon = float(input('Your longitude: '))
-    
-    # Return the latitude / longitude
-    return lat, lon
+    try:
+        # Try to asks the user what latitude / longitude he has
+        lat = float(input('Please enter your latitude: '))
+        lon = float(input('Please enter your longitude: '))
         
+        # If it worked, print a line for clarity and return the latitude / longitude 
+        print('')
+        return lat, lon
+    
+    except ValueError:
+        # If a variable is entered incorrectly, print an error message and repeat the function
+        print('Invalid input\nPlease enter a valid latitude and longitude.\n')
+        return get_lat_lon()
+  
 try:
     # Try to read the 'API_KEY' environment variable from the .env file
     api_key = os.getenv('API_KEY')
