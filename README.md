@@ -7,9 +7,8 @@ This Python script makes a request to the OpenWeatherMap API and outputs the cur
 1. Download or clone the repository using `git clone`.
 2. Ensure that you have Python 3.x installed.
 3. Install the required Python modules using the command `pip install -r requirements.txt`.
-4. Specify the desired latitude and longitude in the `.env` file.
-5. Add your OpenWeatherMap API keys to the `.env` file.
-6. Run the script using the command `python main.py`.
+4. Add your OpenWeatherMap API keys to the `.env` file.
+5. Run the script using the command `python main.py`.
 
 ## Configuration
 
