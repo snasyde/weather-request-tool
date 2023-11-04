@@ -1,4 +1,4 @@
-# Weather Forecast with OpenWeatherMap API
+# Weather Request with OpenWeatherMap API
 
 This Python script makes a request to the OpenWeatherMap API and outputs the current temperature and weather conditions for a specified latitude and longitude.
 
